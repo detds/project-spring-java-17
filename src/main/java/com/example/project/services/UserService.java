@@ -12,6 +12,8 @@ import com.example.project.entities.User;
 import com.example.project.repositories.UserRepository;
 import com.example.project.services.exceptions.ResourceNotFoundException;
 
+import javax.persistence.EntityNotFoundException;
+
 @Service
 public class UserService {
     
@@ -41,9 +43,13 @@ public class UserService {
     }
 
     public User update(Long id, User obj) {
-        User entity = repository.getReferenceById(id);
-        updateData(entity, obj);
-        return repository.save(entity);
+        try {
+            User entity = repository.getReferenceById(id);
+            updateData(entity, obj);
+            return repository.save(entity);
+        } catch (EntityNotFoundException e) {
+            throw new ResourceNotFoundException(id);
+        }
     }
 
     private void updateData(User entity, User obj) {
