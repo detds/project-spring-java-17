@@ -1,6 +1,10 @@
 # Web services project with Spring Boot e JPA/Hibernate
 
-A simple implementation of a backend shopping system created with **Spring Boot** framework and **Java**, using **Spring Data JPA/Hibernate** to interact with **PostgreSQL database**.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellowgreen.svg)](https://github.com/detds/project-spring-java-17/blob/main/LICENSE)
+
+https://javasb-proj.fly.dev/
+
+A simple implementation of a **backend** shopping system created with **Spring Boot** framework and **Java**, using **Spring Data JPA/Hibernate** to interact with **PostgreSQL database**.
 
 In this app, we can **create**, **read**, **update** or **delete** users (CRUD).
 
