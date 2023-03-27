@@ -2,11 +2,11 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellowgreen.svg)](https://github.com/detds/project-spring-java-17/blob/main/LICENSE)
 
-https://javasb-proj.fly.dev/
+https://javaspring.fly.dev
 
 A simple implementation of a **backend** shopping system created with **Spring Boot** framework and **Java**, using **Spring Data JPA/Hibernate** to interact with **PostgreSQL database**.
 
-This project was deployed to Fly.io and can be accessed at this link: https://javasb-proj.fly.dev/.
+This project was deployed to Fly.io and can be accessed at this link: https://javaspring.fly.dev.
 
 In this app, we can **create**, **read**, **update** or **delete** users (CRUD).
 
@@ -37,22 +37,19 @@ This project also contains: **exception handling** (findById, delete and update 
 
 ## Summary of HTTP methods and description of its actions
 
- Methods | Urls            | Actions 
- ------- | --------------- | ------- 
- POST    | /users          | create new User 
- GET     | /users          | find all Users 
- GET     | /users/:id      | find a User by :id 
- PUT     | /users/:id      | update a User by :id 
- DELETE  | /users/:id      | delete a User by :id 
- GET     | /products       | find all Products 
- GET     | /products/:id   | find a Product by :id 
- GET     | /orders         | find all Orders 
- GET     | /orders/:id     | find a Order by :id 
- GET     | /categories     | find all Categories 
- GET     | /categories/:id | find a Category by :id 
-
-
-
+| Methods | Urls            | Actions                |
+|---------|-----------------|------------------------|
+| POST    | /users          | create new User        |
+| GET     | /users          | find all Users         |
+| GET     | /users/:id      | find a User by :id     |
+| PUT     | /users/:id      | update a User by :id   |
+| DELETE  | /users/:id      | delete a User by :id   |
+| GET     | /products       | find all Products      |
+| GET     | /products/:id   | find a Product by :id  |
+| GET     | /orders         | find all Orders        |
+| GET     | /orders/:id     | find a Order by :id    |
+| GET     | /categories     | find all Categories    |
+| GET     | /categories/:id | find a Category by :id |
 
 ## Running
 
